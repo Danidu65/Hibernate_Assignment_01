@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 public class FactoryConfig {
     private static FactoryConfig factoryConfig;
     private SessionFactory sessionFactory;
-
     private FactoryConfig() {
         Configuration configuration = new Configuration().configure()
                 .addAnnotatedClass(Book.class)
